@@ -6,7 +6,7 @@
 
 ## Algorithm‐Benchmark Results
 
-| Algorithm          | File                         | Size of Matching | Time (wall‑clock) | Configuration                         |
+| Algorithm          | File                         | Size of Matching | Time | Configuration                         |
 |--------------------|------------------------------|------------------|-------------------|---------------------------------------|
 | Edmonds Blossom    | `log_normal_100.csv`         | 50               | 0.2 s             | Local – Apple M1 Max, 40 GB RAM       |
 | Edmonds Blossom    | `musae_ENGB_edges.csv`       | 2,968            | 0.5 s             | Local – Apple M1 Max, 40 GB RAM       |
