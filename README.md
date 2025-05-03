@@ -20,21 +20,12 @@
 ## Approaches
 
 ### Edmonds‑Blossom Algorithm
-The Edmonds–Blossom algorithm takes a general graph G=(V,E) and incrementally builds a matching M by searching for **augmenting paths**—alternating paths that start and end at unmatched vertices. Each iteration either:  
-1. finds no augmenting path, proving M is maximum;  
-2. discovers an augmenting path and augments M; or  
-3. detects a **blossom** (odd cycle), contracts it, and continues the search.  
-
-Correctness follows from **Edmonds' Matching Theorem**: if no augmenting path exists, the current matching is maximum. The algorithm's O(n^4) time complexity renders it impractical for massive graphs, so we restricted it to the two smallest data sets.
+The algorithm takes a general graph G = (V, E) and finds a maximum matching M. The algorithm starts with an empty matching and then iteratively improves it by adding edges, one at a time, to build augmenting paths in the matching M. Adding to an augmenting path can grow a matching since every other edge in an augmenting path is an edge in the matching; as more edges are added to the augmenting path, more matching edges are discovered. The blossom algorithm has three possible results after each iteration. Either the algorithm finds no augmenting paths, in which case it has found a maximum matching; an augmenting path can be found in order to improve the outcome; or a blossom can be found in order to manipulate it and discover a new augmenting path. The algorithm guarantees finding a maximum cardinality matching using an augmenting path approach, which generalizes the ideas from bipartite matching like the Hungarian algorithm. Its correctness is backed by Edmonds' Matching Theorem that ensures if no augmenting path exists, the current matching is the maximum. The algorithm has a time complexity of O(n^4), which is impractical for large scale graphs. This is what led us to only use this approach for the first two csv files, as they are of a suitable size.
 
 ### Fischer‑Mitrović‑Uitto (FMU) Algorithm
-FMU is a **deterministic, semi‑streaming (1+ε)-approximation** for maximum matching that needs only poly(1/ε) streamed passes. Earlier results relied on randomness with exponential‑in‑(1/ε) running times; FMU improves this to O(log log n · poly(1/ε)) in the semi‑streaming model and achieves similarly near‑optimal bounds in Linear‑Memory MPC, Sublinear‑Memory MPC, and CONGEST models.
+This algorithm is a deterministic, semi-streaming (1 + ε) - approximation algorithm for maximum cardinality matching. It requires only poly(1/ε) passes over the input, which is a notable improvement over previous algorithms that relied on randomized techniques. This is significant because the previous algorithms that relied on randomness had exponential time. The researchers not only ran this on a semi-streaming model they also ran it on different models, such as Linear-Memory MPC, Sublinear-Memory MPC, and CONGEST models. The run times for each were O(log log n · poly 1/ε), Õ( √ log n · poly 1/ε), and O(log n · poly 1/ε), respectively. These improvements are significant because prior work for each of these models required exponential-in-1/ε time complexities. By contrast, this algorithm achieves near-optimal communication rounds while preserving a strong approximation guarantee. The size of the matching it computes is at most a factor (1 + ε) larger than the optimal matching, which is a near-optimal guarantee. 
 
-The algorithm:
-
-1. **Pass 0 – Greedy Maximal Matching:** obtains a 2‑approximate matching M.  
-2. **Phases 1,...,poly(1/ε):** each phase performs parallel DFS from every unmatched vertex, searching for *short* augmenting paths. When a path is found, its DFS tree is removed to prevent interaction between concurrent searches. Each successful phase enlarges M by a multiplicative factor (1+1/poly(1/ε)).  
-3. After all phases, |M| is within (1+ε) of optimal.
+This algorithm works by taking in a graph G and an approximate parameter ε and then applies a greedy maximal matching algorithm on the first pass, which is known as a 2-approximation. This step creates M, where no two matched edges share a vertex. The algorithm then iterates through phases 1,2,..., poly(1/ε), where each phase searches for short augmenting paths by using a parallel depth-first search from unmatched (free) nodes. When an augmenting path is found, the corresponding DFS tree is removed from the graph to maintain independence across searches. Each phase increases the size of the matching by a (1 + 1/poly(1/ε)) factor. After all phases, the resulting matching is guaranteed to be within a (1 + ε) factor of the optimal, offering a very good approximation while keeping resource usage low, which leads to greater scalability.
 
 ---
 
