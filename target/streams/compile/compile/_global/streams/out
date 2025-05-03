@@ -1,0 +1,46 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:577:7: not found: value safelyUnpersist[0m
+[0m[[0m[31merror[0m] [0m[0m      safelyUnpersist(matchedVertices)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:578:7: not found: value safelyUnpersist[0m
+[0m[[0m[31merror[0m] [0m[0m      safelyUnpersist(vertexCounts)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:638:5: not found: value safelyUnpersist[0m
+[0m[[0m[31merror[0m] [0m[0m    safelyUnpersist(matchedVertices)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:639:5: not found: value safelyUnpersist[0m
+[0m[[0m[31merror[0m] [0m[0m    safelyUnpersist(vertexCounts)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:640:5: not found: value safelyUnpersist[0m
+[0m[[0m[31merror[0m] [0m[0m    safelyUnpersist(goodMatches)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:664:5: not found: value safelyUnpersist[0m
+[0m[[0m[31merror[0m] [0m[0m    safelyUnpersist(allValidMatches)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:1316:9: not found: value isEmpty[0m
+[0m[[0m[31merror[0m] [0m[0m    if (isEmpty(augmentingPairsRDD)) {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:1401:9: not found: value isEmpty[0m
+[0m[[0m[31merror[0m] [0m[0m    if (isEmpty(augmentingUpdates)) {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:1492:9: not found: value isEmpty[0m
+[0m[[0m[31merror[0m] [0m[0m    if (isEmpty(oddOddPairsRDD)) {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:1563:9: not found: value isEmpty[0m
+[0m[[0m[31merror[0m] [0m[0m    if (isEmpty(oddOddUpdates)) {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:1631:9: not found: value isEmpty[0m
+[0m[[0m[31merror[0m] [0m[0m    if (isEmpty(unmatchedVertices)) {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:1660:9: not found: value isEmpty[0m
+[0m[[0m[31merror[0m] [0m[0m    if (isEmpty(unmatchedEdges)) {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:1689:13: not found: value isEmpty[0m
+[0m[[0m[31merror[0m] [0m[0m    while (!isEmpty(remainingEdges) && iteration < maxIterations) {[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:1711:11: not found: value isEmpty[0m
+[0m[[0m[31merror[0m] [0m[0m      if (isEmpty(currentSelected)) {[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/elliottfrink/frinke-csci3390-final_project/src/main/scala/final_project/main.scala:1747:9: not found: value isEmpty[0m
+[0m[[0m[31merror[0m] [0m[0m    if (isEmpty(selectedEdgesRDD)) {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m15 errors found[0m

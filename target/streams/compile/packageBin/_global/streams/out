@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/final_project_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project/main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project/main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project/main$VertexState.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project/main$VertexState.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project/clustering_verifier$VertexData$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project/clustering_verifier$VertexData$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project/clustering_verifier$VertexData$2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project/clustering_verifier$VertexData$2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project/clustering_verifier$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project/clustering_verifier$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project/main$VertexState$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project/main$VertexState$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project/matching_verifier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project/matching_verifier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project/main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project/main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project/matching_verifier$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project/matching_verifier$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	final_project/clustering_verifier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/elliottfrink/frinke-csci3390-final_project/target/scala-2.12/classes/final_project/clustering_verifier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
